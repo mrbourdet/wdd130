@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+}
+main {
+    background-color: #737373;  
+    text-align: center; 
+    margin: auto;
+    max-width: 1200px;
+    border: 0;
+
+#hero{
+    display:block;
+    box-sizing: border-box;
+}
+.bubbles {
+    display:inline-block;
+    width: 170px;
+    border-radius: 50%;
+    border: 10px solid #444444;
+    margin: 40px;
+    
+}
