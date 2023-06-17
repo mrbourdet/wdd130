@@ -140,17 +140,19 @@ footer p {
     grid-column: 1/11;
     padding: 20px;
 }
-.river_l, .river_r {
+.river_l {
+    grid-column: 1/6;    
     max-width: 560px;
     padding: 20px;
     justify-self: center;
     align-self: center;
 }
-.river_l {
-    grid-column: 1/6;
-}
 .river_r {
     grid-column: 6/10;
+        max-width: 560px;
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
 }
 
 .home-title {
