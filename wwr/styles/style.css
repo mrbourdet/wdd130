@@ -80,6 +80,34 @@ main section{
 main section img {
     box-sizing: border-box;
 }
+.rivers_main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.river_l {
+    grid-column: 1/2;
+    margin: 10px;
+    padding: 10px;
+    object-fit: contain;
+}
+.river_l img{
+    width: 70%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.river_r img{
+    width: 70%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.river_r {
+    grid-column: 2/3;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
 footer {
     background-color: var(--paynes-gray);
     color:black;

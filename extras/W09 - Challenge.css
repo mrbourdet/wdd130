@@ -1,34 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Kameron:wght@700&family=Roboto:wght@100;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Roboto+Slab:wght@500&family=Roboto:wght@100;400;900&display=swap');
 
 body {
-    background-color: white;
-    width: 256px;
-    padding: 30;
-    align-self: center;  
+    background-color: black;
+    display: grid;
+    /* width: 256px; */
+    justify-content: center;
+    
 }
 header{
-    width: 100%;
-    background-color: white;
+    width: 256px;
+    background-color: black;
 }
 main{
-    width: 100%;
+    width: 226px;
+    height: 268px;
+    overflow: scroll;
     background-color: white;
     text-align: center;
+    padding: 15px;
+    color: gray;
 }
 footer{
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 256px;
     background-color: #3F5B8B;
 }
-.read {
+.box_wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 24px 12px;
+    font-weight: 500;
+    color: white;
+    border-bottom: 15px;
+    background-color: #3F5B8B;
+}
+#read {
     grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #3F5B8B;
 }
-.views{
+#views{
     grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #3F5B8B;
 }
-.comments{
+#comments{
     grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #3F5B8B;
 }
 .hero{
-    width: 265px;
+    width: 256px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.first_line{
+    font-size: 2em;
+    font-family: Baskervville, 'Times New Roman', Times, serif;
+    background-color: #3F5B8B;
+}
+.supercript{
+    font-size: .5em;
+}
+.second_line{
+    grid-row: 1/2;
+    font-size: .5em;
+    font-family: Baskervville, 'Times New Roman', Times, serif;
+    background-color: #3F5B8B;
+
+}
+#post_number{
+    font-family: 'Roboto Slab','Times New Roman', Times, serif;
+    color:black;
+}
+#weeks_go{
+    font-family: 'Roboto Slab','Times New Roman', Times, serif;
+    color:#3F5B8B;
 }
