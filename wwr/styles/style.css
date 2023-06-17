@@ -45,6 +45,9 @@ h2 {
     font-family: var(--heading-font);
     padding: 0;
 }
+h3 {
+    font-family: var(--heading-font);
+}
 h4 {
     color: var(--primary-color);
     font-family: var(--heading-font);
