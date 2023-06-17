@@ -80,33 +80,6 @@ main section{
 main section img {
     box-sizing: border-box;
 }
-.rivers_main{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-
-}
-.river_l {
-    grid-column: 1/2;
-    margin: 10px;
-    padding: 10px;
-    object-fit: contain;
-}
-.river_l img{
-    width: 70%;
-    object-fit: cover;
-    object-position: bottom;
-}
-.river_r img{
-    width: 70%;
-    object-fit: cover;
-    object-position: bottom;
-}
-.river_r {
-    grid-column: 2/3;
-    margin: 10px;
-    padding: 10px;
-    
-}
 
 footer {
     background-color: var(--paynes-gray);
@@ -163,6 +136,23 @@ footer p {
     display: grid;
     grid-template-columns: repeat(10,1fr);
 }
+#title {
+    grid-column: 1/11;
+    padding: 20px;
+}
+.river_l, .river_r {
+    max-width: 560px;
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
+}
+.river_l {
+    grid-column: 1/6;
+}
+.river_r {
+    grid-column: 6/10;
+}
+
 .home-title {
     color: white;
     font-family: var(--heading-font);
@@ -253,7 +243,7 @@ footer .social img {
     padding-top: 15px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     #hero, .home-grid {
         display: block;
         height: auto;
