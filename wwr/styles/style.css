@@ -149,7 +149,7 @@ footer p {
 }
 .river_r {
     grid-column: 6/10;
-        max-width: 560px;
+    max-width: 560px;
     padding: 20px;
     justify-self: center;
     align-self: center;
