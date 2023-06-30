@@ -40,6 +40,13 @@ body {
 img {
   margin: 0 auto;
 }
+figure {
+  text-align: center;
+}
+figcaption {
+  font-family: var(--heading-font);
+  font-size: 10pt;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
@@ -47,25 +54,49 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   text-align: center;
 }
+ul, li {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    font-size: 18px;
+}
 hr {
   height: 3px;
   margin: 35px 0;
-  background: var(--accent1-color);
+  background: var(--accent2-color);
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr ifr;
+  grid-template-rows: 300px, 300px, 300px, 100px;
+}
+.left-side {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  padding: 40px;
+}
+.right-side {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  padding: 40px;
 }
 header {
   padding: 1em;
-  text-align: left;
+  text-align: center;
   color: var(--headline-color-on-white);
   background-color: white;
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
+footer {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
 
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
-  padding: 1em;
+  /* padding: 1em; */
 }
 .colors {
   width: 100%;
@@ -116,10 +147,11 @@ nav  {
 
 }
 nav a {
-  padding:1em;
+  padding: 1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
+  justify-items: space-between;
 
 }
 nav a:link, nav a:visited {
