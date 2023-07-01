@@ -33,7 +33,8 @@ Fonts are separated by a | */
 body {
   max-width: 1200px;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 14pt;
+  line-height: 140%;
   text-align: left;
 }
 img {
@@ -65,8 +66,8 @@ hr {
 }
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr ifr;
-  grid-template-rows: 300px, 300px, 300px, 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 400px 400px 400px;
 }
 .left-side {
   grid-column: 1/2;
