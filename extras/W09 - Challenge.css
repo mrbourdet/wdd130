@@ -14,46 +14,30 @@ header{
 main{
     width: 226px;
     height: 268px;
-    overflow: scroll;
+    overflow-y: scroll;
     background-color: white;
     text-align: center;
     padding: 15px;
     color: gray;
 }
 footer{
-    width: 256px;
     background-color: #3F5B8B;
-}
-.box_wrapper{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 55px 20px;
+    font-family: Baskervville, 'Times New Roman', Times, serif;
     font-weight: 500;
     color: white;
-    border-bottom: 15px;
-    background-color: #3F5B8B;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
-#read {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    text-align: center;
-    background-color: #3F5B8B;
+sup {
+    vertical-align: super;
+    font-size: .5em;
 }
-#views{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    text-align: center;
-    background-color: #3F5B8B;
-    border-left: 1px gray;
-    border-right: 1px gray;
-}
-#comments{
-    grid-column: 3/4;
-    grid-row: 1/2;
-    text-align: center;
-    background-color: #3F5B8B;
+.box_wrapper{
+    display:flex;
+    width: 256px;
+    height: 60px;
+    justify-items: center;
+    
 }
 .hero{
     width: 256px;
@@ -61,23 +45,17 @@ footer{
     border-top-right-radius: 15px;
 }
 .first_line{
-    grid-row: 1/2;
     font-size: 1.5em;
-    font-family: Baskervville, 'Times New Roman', Times, serif;
-    background-color: #3F5B8B;
+    justify-content: space-around;
+}
+.second_line{
+    font-size: .5em;
+    justify-content: space-around;
 }
 .supercript{
     font-size: .5em;
 }
-.second_line{
-    grid-row: 2/3;
-    font-size: .5em;
-    text-align: center;
-    font-family: Baskervville, 'Times New Roman', Times, serif;
-    background-color: #3F5B8B;
-    align-self: flex-start;
 
-}
 #post_number{
     font-family: 'Roboto Slab','Times New Roman', Times, serif;
     color:black;
