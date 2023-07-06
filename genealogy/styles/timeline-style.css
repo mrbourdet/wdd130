@@ -4,13 +4,13 @@
   
   /* Set a background color  */
   body {
-    background-color: rgb(25, 44, 99);
+    background-color: #002868;
     font-family: Helvetica, sans-serif;
 
   }
   .title{
-        background-color: darkred;
-        color: white;
+        background-color: #910101;
+        color: #E0B532;
         padding: 10px;
         border-radius: 8px;
   }
