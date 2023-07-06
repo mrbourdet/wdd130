@@ -4,11 +4,16 @@
   
   /* Set a background color */
   body {
-    background-color: #474e5d;
-    background-image: url("/images/_B_LDS2A.GIF");
+    background-color: rgb(25, 44, 99);
     font-family: Helvetica, sans-serif;
+
   }
-  
+  .title{
+        background-color: darkred;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+  }
   /* The actual timeline (the vertical ruler) */
   .timeline {
     position: relative;
@@ -95,7 +100,7 @@
   
   /* The actual content */
   .content {
-    padding: 20px 30px;
+    padding: 5px 10px;
     background-color: white;
     position: relative;
     border-radius: 6px;
